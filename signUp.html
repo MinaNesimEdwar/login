@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-primary bg-opacity-75">
+    <div id="login" class="container ">
+      <div class="item my-5 p-5  m-auto bg-light rounded-3  ">
+        <h1 class="fs-1 text-center text-primary  mb-5">Smart Login System</h1>
+        <input oninput="validateUserName()" class="form-control bg-transparent  my-4 border-2 border-primary  focus-ring focus-ring-primary " type="text" id="userNameRegister" placeholder="Enter Your Name">
+        <div id="nameAlert" class=" alert alert-danger d-none text-center">User Name must be between 3 and 15 characters length.</div>
+        <input oninput="validateUserEmail()" class="form-control bg-transparent my-4 border-2 border-primary  focus-ring focus-ring-primary " type="email" id="userEmailRegister" placeholder="Enter Your Email">
+        <div id="emailAlert" class=" alert alert-danger d-none text-center">Please enter valid email.</div>
+        <input oninput="validateUserPassword()" class="form-control  bg-transparent my-4 border-2 border-primary  focus-ring focus-ring-primary " type="password" id="userPasswordRegister" placeholder="Enter Your Password">        
+        <div id="passwordAlert" class=" alert alert-danger d-none text-center">Invalid password. Passwords must contain at least one lowercase letter, one uppercase letter, one digit, one special character, and must be at least 8 characters long.</div>
+        <div id="successAlert" class="alert alert-success text-center d-none">Success</div>
+        <button onclick="addAccount()" class="btn btn-outline-primary  w-100 mb-3">Sign up</button>
+        <p class=" text-center fs-5">You have an account? <a href="index.html" class="text-primary">Sign In</a></p>
+      </div>
+
+
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
